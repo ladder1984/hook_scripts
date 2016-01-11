@@ -2,6 +2,9 @@
 """
 增加当前本地分支名，如果当前不在一个分支上，则不增加
 """
+import os
+
+
 def git_shell(git_command):
     try:
         return os.popen(git_command).read().strip()

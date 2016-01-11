@@ -2,6 +2,9 @@
 """
 增加用户名
 """
+import os
+
+
 def git_shell(git_command):
     try:
         return os.popen(git_command).read().strip()
